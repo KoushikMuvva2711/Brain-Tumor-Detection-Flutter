@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the pre-trained model
-model = load_model('BrainTumor50EpochsCategorical.h5')
+model = load_model('BrainTumor50EpochsCategorical3.h5')
 
 # Define a helper function to log user information
 def log_user_prediction(username, tumor_detected):
