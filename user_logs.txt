@@ -23,3 +23,7 @@
 2024-11-05 00:26:30, koushik, Tumor Detected: False
 2024-11-05 02:16:59, koushik, Tumor Detected: False
 2024-11-05 02:17:02, koushik, Tumor Detected: True
+2024-11-05 09:54:25, koushik, Tumor Detected: True
+2024-11-05 09:54:31, koushik, Tumor Detected: False
+2024-11-05 09:56:02, koushik, Tumor Detected: False
+2024-11-05 09:59:43, koushik, Tumor Detected: True

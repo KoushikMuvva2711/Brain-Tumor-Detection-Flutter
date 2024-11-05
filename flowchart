@@ -1,0 +1,33 @@
+digraph {
+	node [color=lightblue fontname=Arial shape=box style=filled]
+	"Data Processing" [label="Data Processing"]
+	"Load Images" [label="Load Images from Dataset"]
+	"Resize & Normalize" [label="Resize and Normalize Images"]
+	"Data Processing" -> "Load Images"
+	"Data Processing" -> "Resize & Normalize"
+	"Train-Test Split" [label="Train-Test Split"]
+	"Resize & Normalize" -> "Train-Test Split"
+	"Load Images" -> "Train-Test Split"
+	"Model Design" [label="Model Design"]
+	"Train-Test Split" -> "Model Design"
+	"Model Training & Evaluation" [label="Model Training & Evaluation"]
+	"Model Design" -> "Model Training & Evaluation"
+	"Training Accuracy & Loss" [label="Training Accuracy and Loss Plot"]
+	"Validation Accuracy & Loss" [label="Validation Accuracy and Loss Plot"]
+	"Model Training & Evaluation" -> "Training Accuracy & Loss"
+	"Model Training & Evaluation" -> "Validation Accuracy & Loss"
+	"Model Performance" [label="Model Performance"]
+	"Training Accuracy & Loss" -> "Model Performance"
+	"Validation Accuracy & Loss" -> "Model Performance"
+	"Confusion Matrix" [label="Confusion Matrix (Heatmap)"]
+	"Classification Report" [label="Classification Report (Precision, Recall, F1)"]
+	"Model Performance" -> "Confusion Matrix"
+	"Model Performance" -> "Classification Report"
+	"ROC Curve" [label="ROC Curve (TPR vs FPR)"]
+	"Confusion Matrix" -> "ROC Curve"
+	"Classification Report" -> "ROC Curve"
+	"Precision-Recall Curve" [label="Precision-Recall Curve"]
+	"Loss Distribution" [label="Loss Distribution (Histogram)"]
+	"ROC Curve" -> "Precision-Recall Curve"
+	"ROC Curve" -> "Loss Distribution"
+}
